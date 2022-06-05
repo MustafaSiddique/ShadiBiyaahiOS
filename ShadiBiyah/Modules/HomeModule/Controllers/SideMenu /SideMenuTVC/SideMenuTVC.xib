@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.otf">
+            <string>Montserrat-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SideMenuTVC" rowHeight="87" id="KGk-i7-Jjw" customClass="SideMenuTVC" customModule="FoodChoo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="531" height="87"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="531" height="87"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CJb-oS-ZL6">
+                        <rect key="frame" x="0.0" y="0.0" width="531" height="87"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QJY-MG-Aps">
+                                <rect key="frame" x="16" y="16" width="53" height="55"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="spa-6w-mka" customClass="UILabelDeviceClass" customModule="FoodChoo" customModuleProvider="target">
+                                <rect key="frame" x="77" y="35" width="39" height="17.5"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                        <real key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="iPhoneFontWeight" value="medium"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rxt-ew-PFq">
+                                <rect key="frame" x="132" y="32.5" width="44" height="22"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kfU-8m-Erc" customClass="UILabelDeviceClass" customModule="FoodChoo" customModuleProvider="target">
+                                        <rect key="frame" x="7" y="3" width="30.5" height="16"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="13"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                                <real key="value" value="13"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="iPhoneFontWeight" value="medium"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.73725490196078436" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="FUU-aI-RlY"/>
+                                    <constraint firstItem="kfU-8m-Erc" firstAttribute="centerY" secondItem="rxt-ew-PFq" secondAttribute="centerY" id="P3n-xL-rCO"/>
+                                    <constraint firstItem="kfU-8m-Erc" firstAttribute="centerX" secondItem="rxt-ew-PFq" secondAttribute="centerX" id="oHC-MK-h9B"/>
+                                    <constraint firstAttribute="width" secondItem="rxt-ew-PFq" secondAttribute="height" multiplier="42:21" id="yel-UF-jig"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aZi-BP-aHw">
+                                <rect key="frame" x="0.0" y="86" width="531" height="1"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="eLS-qj-eus"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aZi-BP-aHw" firstAttribute="leading" secondItem="CJb-oS-ZL6" secondAttribute="leading" id="07d-Jg-Ucf"/>
+                            <constraint firstItem="rxt-ew-PFq" firstAttribute="leading" secondItem="spa-6w-mka" secondAttribute="trailing" constant="16" id="08D-wI-kdh"/>
+                            <constraint firstAttribute="bottom" secondItem="aZi-BP-aHw" secondAttribute="bottom" id="2x7-uj-LTl"/>
+                            <constraint firstAttribute="bottom" secondItem="QJY-MG-Aps" secondAttribute="bottom" constant="16" id="HqI-FZ-yG9"/>
+                            <constraint firstItem="rxt-ew-PFq" firstAttribute="centerY" secondItem="spa-6w-mka" secondAttribute="centerY" id="Ifl-67-N3U"/>
+                            <constraint firstItem="QJY-MG-Aps" firstAttribute="width" secondItem="CJb-oS-ZL6" secondAttribute="width" multiplier="0.1" id="PDF-Pq-qDy"/>
+                            <constraint firstItem="QJY-MG-Aps" firstAttribute="top" secondItem="CJb-oS-ZL6" secondAttribute="top" constant="16" id="Pk6-8U-ssg"/>
+                            <constraint firstItem="QJY-MG-Aps" firstAttribute="leading" secondItem="CJb-oS-ZL6" secondAttribute="leading" constant="16" id="fJZ-cE-nkh"/>
+                            <constraint firstItem="spa-6w-mka" firstAttribute="leading" secondItem="QJY-MG-Aps" secondAttribute="trailing" constant="8" id="m8o-WV-gGS"/>
+                            <constraint firstAttribute="trailing" secondItem="aZi-BP-aHw" secondAttribute="trailing" id="mMR-RH-rMk"/>
+                            <constraint firstItem="spa-6w-mka" firstAttribute="centerY" secondItem="QJY-MG-Aps" secondAttribute="centerY" id="zIa-oe-ZAf"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="CJb-oS-ZL6" secondAttribute="bottom" id="1Xr-Q7-S4a"/>
+                    <constraint firstAttribute="trailing" secondItem="CJb-oS-ZL6" secondAttribute="trailing" id="BtO-nS-iy2"/>
+                    <constraint firstItem="CJb-oS-ZL6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Kbe-oF-bXC"/>
+                    <constraint firstItem="CJb-oS-ZL6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="wiL-k1-MFs"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bottomView" destination="aZi-BP-aHw" id="5Yj-eZ-jy2"/>
+                <outlet property="imgOptions" destination="QJY-MG-Aps" id="EDZ-8A-GMM"/>
+                <outlet property="lblOptions" destination="spa-6w-mka" id="vOl-Rb-tsj"/>
+                <outlet property="statusView" destination="rxt-ew-PFq" id="UJU-fT-6FQ"/>
+            </connections>
+            <point key="canvasLocation" x="177.536231884058" y="84.040178571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

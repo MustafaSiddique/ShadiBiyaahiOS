@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.otf">
+            <string>Montserrat-Medium</string>
+        </array>
+        <array key="Montserrat-SemiBold.otf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectGuestRangeVC" customModule="FoodChooRider" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SELECT GUEST RANGE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQ9-vI-17b" customClass="UILabelDeviceClass" customModule="FoodChooRider" customModuleProvider="target">
+                    <rect key="frame" x="28" y="20" width="174.33333333333334" height="17.666666666666671"/>
+                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="15"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="iPhoneFontWeight" value="semiBold"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QTa-xe-uGb">
+                    <rect key="frame" x="363" y="18" width="23" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="QTa-xe-uGb" secondAttribute="height" multiplier="25:24" id="RDi-U4-hPd"/>
+                    </constraints>
+                    <state key="normal" image="ArrowDown"/>
+                </button>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="NWQ-PT-1VT">
+                    <rect key="frame" x="26" y="353" width="362" height="31"/>
+                </slider>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hyh-Ko-y4n" customClass="CardView" customModule="FoodChooRider" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="599.33333333333337" width="414" height="136.66666666666663"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SELECT GUEST RANGE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f0i-Va-YSX" customClass="UILabelDeviceClass" customModule="FoodChooRider" customModuleProvider="target">
+                            <rect key="frame" x="120.00000000000001" y="20" width="174.33333333333337" height="17.666666666666671"/>
+                            <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                    <real key="value" value="15"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="string" keyPath="iPhoneFontWeight" value="semiBold"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VfF-Lh-LMH" customClass="CardView" customModule="FoodChooRider" customModuleProvider="target">
+                            <rect key="frame" x="60" y="57.666666666666629" width="294" height="39"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FHG-au-xe3" customClass="CardView" customModule="FoodChooRider" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="205.66666666666666" height="39"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From 300-400" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9a2-L8-qGA" customClass="UILabelDeviceClass" customModule="FoodChooRider" customModuleProvider="target">
+                                            <rect key="frame" x="59" y="12" width="88" height="15"/>
+                                            <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="12"/>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                                    <real key="value" value="12"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="iPhoneFontWeight" value="medium"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="9a2-L8-qGA" firstAttribute="top" secondItem="FHG-au-xe3" secondAttribute="top" constant="12" id="GX5-oD-rMb"/>
+                                        <constraint firstItem="9a2-L8-qGA" firstAttribute="centerX" secondItem="FHG-au-xe3" secondAttribute="centerX" id="gGr-x2-HxF"/>
+                                        <constraint firstAttribute="bottom" secondItem="9a2-L8-qGA" secondAttribute="bottom" constant="12" id="jMS-5F-oAV"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isCircular" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetWidth">
+                                            <integer key="value" value="0"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetHeight">
+                                            <integer key="value" value="0"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                            <real key="value" value="0.0"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eDR-it-0XC" customClass="UIButtonDeviceClass" customModule="FoodChooRider" customModuleProvider="target">
+                                    <rect key="frame" x="205.66666666666669" y="0.0" width="88.333333333333314" height="39"/>
+                                    <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="12"/>
+                                    <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <state key="normal" title="Apply" image="DownArrow"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                            <real key="value" value="12"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="iPhoneFontWeight" value="medium"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isCircular" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="eDR-it-0XC" secondAttribute="trailing" id="8he-Zp-fkl"/>
+                                <constraint firstAttribute="bottom" secondItem="FHG-au-xe3" secondAttribute="bottom" id="U4G-c9-lVG"/>
+                                <constraint firstItem="eDR-it-0XC" firstAttribute="top" secondItem="VfF-Lh-LMH" secondAttribute="top" id="XaG-yS-ElN"/>
+                                <constraint firstItem="FHG-au-xe3" firstAttribute="top" secondItem="VfF-Lh-LMH" secondAttribute="top" id="XfZ-QX-cQu"/>
+                                <constraint firstItem="FHG-au-xe3" firstAttribute="leading" secondItem="VfF-Lh-LMH" secondAttribute="leading" id="eKh-A7-4e9"/>
+                                <constraint firstItem="eDR-it-0XC" firstAttribute="leading" secondItem="FHG-au-xe3" secondAttribute="trailing" id="nq3-6g-cK2"/>
+                                <constraint firstAttribute="bottom" secondItem="eDR-it-0XC" secondAttribute="bottom" id="p78-pt-bJZ"/>
+                                <constraint firstItem="FHG-au-xe3" firstAttribute="width" secondItem="VfF-Lh-LMH" secondAttribute="width" multiplier="0.7" id="u6S-Df-6Nz"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetWidth">
+                                    <integer key="value" value="0"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetHeight">
+                                    <integer key="value" value="0"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isCircular" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.73725490199999999" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="VfF-Lh-LMH" firstAttribute="leading" secondItem="hyh-Ko-y4n" secondAttribute="leading" constant="60" id="5SM-a3-Lh4"/>
+                        <constraint firstAttribute="trailing" secondItem="VfF-Lh-LMH" secondAttribute="trailing" constant="60" id="7Pu-3Z-kEi"/>
+                        <constraint firstAttribute="bottom" secondItem="VfF-Lh-LMH" secondAttribute="bottom" constant="40" id="Udr-gW-7rY"/>
+                        <constraint firstItem="f0i-Va-YSX" firstAttribute="top" secondItem="hyh-Ko-y4n" secondAttribute="top" constant="20" id="ehE-Fb-2EG"/>
+                        <constraint firstItem="VfF-Lh-LMH" firstAttribute="top" secondItem="f0i-Va-YSX" secondAttribute="bottom" constant="20" id="oZ3-F6-x3N"/>
+                        <constraint firstItem="f0i-Va-YSX" firstAttribute="centerX" secondItem="hyh-Ko-y4n" secondAttribute="centerX" id="uaW-Sh-K3u"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="topRightRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="topLeftRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="cQ9-vI-17b" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="28" id="0Tf-Fc-bLq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="QTa-xe-uGb" secondAttribute="trailing" constant="28" id="3yH-cd-qZY"/>
+                <constraint firstItem="NWQ-PT-1VT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="D2l-eh-uxd"/>
+                <constraint firstItem="hyh-Ko-y4n" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Ger-Rf-6de"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hyh-Ko-y4n" secondAttribute="trailing" id="RrR-3e-Aly"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="NWQ-PT-1VT" secondAttribute="trailing" constant="28" id="aMw-Ii-zXi"/>
+                <constraint firstItem="NWQ-PT-1VT" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="fSn-md-p0c"/>
+                <constraint firstItem="cQ9-vI-17b" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="lt9-jA-sMA"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="hyh-Ko-y4n" secondAttribute="bottom" id="mTG-tC-ESo"/>
+                <constraint firstItem="NWQ-PT-1VT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="28" id="r8r-x4-ipn"/>
+                <constraint firstItem="QTa-xe-uGb" firstAttribute="centerY" secondItem="cQ9-vI-17b" secondAttribute="centerY" id="vSh-e9-2YS"/>
+            </constraints>
+            <point key="canvasLocation" x="18.840579710144929" y="67.663043478260875"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ArrowDown" width="14" height="8"/>
+        <image name="DownArrow" width="14" height="8"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

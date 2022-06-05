@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingsVC" customModule="ShadiBiyah" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kjA-uS-k0e" customClass="IQPreviousNextView" customModule="IQKeyboardManagerSwift">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AxK-Im-KXY">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="245.5"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="5qk-RQ-Mp6">
+                                    <rect key="frame" x="157" y="74" width="100" height="97.5"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="tintColor" red="0.3921568627" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="5qk-RQ-Mp6" secondAttribute="height" multiplier="1:1" id="5au-9W-Cv3"/>
+                                        <constraint firstAttribute="height" constant="100" id="h38-6K-3mH"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabledForSubviews" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="LOGO"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusNeeded">
+                                            <real key="value" value="50"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xfz-ci-ihM">
+                                    <rect key="frame" x="147" y="192.5" width="120" height="28"/>
+                                    <color key="backgroundColor" red="0.3921568627" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="Xfz-ci-ihM" secondAttribute="height" multiplier="30:7" id="4SC-zs-LM8"/>
+                                        <constraint firstAttribute="height" constant="28" id="g5U-gL-437"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="12"/>
+                                    <state key="normal" title="Edit Profile">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                            <real key="value" value="16"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="iPhoneFontWeight" value="medium"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isCircular" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusNeeded">
+                                            <real key="value" value="14"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YEE-cI-5Ho">
+                                    <rect key="frame" x="229" y="144.5" width="24" height="24"/>
+                                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="24" id="VXS-uh-2xc"/>
+                                        <constraint firstAttribute="width" constant="24" id="cgc-D4-1J7"/>
+                                    </constraints>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" image="pencil" catalog="system"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusNeeded">
+                                            <real key="value" value="12"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="YEE-cI-5Ho" firstAttribute="top" secondItem="5qk-RQ-Mp6" secondAttribute="bottom" constant="-28" id="SV0-9U-3DT"/>
+                                <constraint firstItem="Xfz-ci-ihM" firstAttribute="top" secondItem="5qk-RQ-Mp6" secondAttribute="bottom" constant="20" id="Tpp-DG-Kmi"/>
+                                <constraint firstItem="5qk-RQ-Mp6" firstAttribute="centerY" secondItem="AxK-Im-KXY" secondAttribute="centerY" id="lad-sd-wfE"/>
+                                <constraint firstItem="YEE-cI-5Ho" firstAttribute="leading" secondItem="5qk-RQ-Mp6" secondAttribute="trailing" constant="-28" id="nFL-Xw-kkr"/>
+                                <constraint firstItem="5qk-RQ-Mp6" firstAttribute="centerX" secondItem="AxK-Im-KXY" secondAttribute="centerX" id="p0Z-Ym-wh6"/>
+                                <constraint firstItem="Xfz-ci-ihM" firstAttribute="centerX" secondItem="5qk-RQ-Mp6" secondAttribute="centerX" id="qWN-m5-cGr"/>
+                            </constraints>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="RFl-eH-s0e">
+                            <rect key="frame" x="28" y="265.5" width="358" height="312.5"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q0i-rX-fM4" customClass="Gradient" customModule="ShadiBiyah" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="358" height="69"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YFu-Ac-WEv" customClass="UILabelDeviceClass" customModule="FoodChoo" customModuleProvider="target">
+                                            <rect key="frame" x="16" y="8" width="43" height="17.5"/>
+                                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                            <color key="textColor" red="0.3921568627" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                                    <real key="value" value="15"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="iPhoneFontWeight" value="medium"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jameson Dunn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OCX-2R-EyZ" customClass="UILabelDeviceClass" customModule="FoodChoo" customModuleProvider="target">
+                                            <rect key="frame" x="16" y="35.5" width="326" height="20"/>
+                                            <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="16"/>
+                                            <color key="textColor" red="0.22352941179999999" green="0.24313725489999999" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                                    <real key="value" value="15"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="iPhoneFontWeight" value="medium"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="YFu-Ac-WEv" firstAttribute="top" secondItem="q0i-rX-fM4" secondAttribute="top" constant="8" id="4Pq-AW-aUQ"/>
+                                        <constraint firstItem="YFu-Ac-WEv" firstAttribute="leading" secondItem="q0i-rX-fM4" secondAttribute="leading" constant="16" id="8ba-UH-JEa"/>
+                                        <constraint firstItem="OCX-2R-EyZ" firstAttribute="top" secondItem="YFu-Ac-WEv" secondAttribute="bottom" constant="10" id="MR1-Wb-OzN"/>
+                                        <constraint firstAttribute="width" secondItem="q0i-rX-fM4" secondAttribute="height" multiplier="57:11" id="PqD-iF-BCs"/>
+                                        <constraint firstAttribute="trailing" secondItem="OCX-2R-EyZ" secondAttribute="trailing" constant="16" id="PqQ-uH-2Ed"/>
+                                        <constraint firstItem="OCX-2R-EyZ" firstAttribute="leading" secondItem="q0i-rX-fM4" secondAttribute="leading" constant="16" id="ZMH-6s-DjK"/>
+                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="OCX-2R-EyZ" secondAttribute="bottom" constant="4" id="gR0-6v-lT8"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                            <color key="value" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="horizontalMode" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="diagonalMode" value="NO"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusNeeded">
+                                            <real key="value" value="12"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sZf-cf-zTv" customClass="Gradient" customModule="ShadiBiyah" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="81" width="358" height="69"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQ1-Dn-KpW" customClass="UILabelDeviceClass" customModule="FoodChoo" customModuleProvider="target">
+                                            <rect key="frame" x="16" y="8" width="100.5" height="17.5"/>
+                                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                            <color key="textColor" red="0.3921568627" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                                    <real key="value" value="15"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="iPhoneFontWeight" value="medium"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="jameson@email.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxW-oO-3yE" customClass="UILabelDeviceClass" customModule="FoodChoo" customModuleProvider="target">
+                                            <rect key="frame" x="16" y="35.5" width="326" height="20"/>
+                                            <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="16"/>
+                                            <color key="textColor" red="0.22352941179999999" green="0.24313725489999999" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                                    <real key="value" value="15"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="iPhoneFontWeight" value="medium"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="sZf-cf-zTv" secondAttribute="height" multiplier="57:11" id="Dql-bh-C9m"/>
+                                        <constraint firstAttribute="trailing" secondItem="fxW-oO-3yE" secondAttribute="trailing" constant="16" id="F0p-DX-5Ix"/>
+                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="fxW-oO-3yE" secondAttribute="bottom" constant="4" id="Ubj-O9-E62"/>
+                                        <constraint firstItem="fQ1-Dn-KpW" firstAttribute="leading" secondItem="sZf-cf-zTv" secondAttribute="leading" constant="16" id="kik-vq-636"/>
+                                        <constraint firstItem="fQ1-Dn-KpW" firstAttribute="top" secondItem="sZf-cf-zTv" secondAttribute="top" constant="8" id="mce-KW-k97"/>
+                                        <constraint firstItem="fxW-oO-3yE" firstAttribute="leading" secondItem="sZf-cf-zTv" secondAttribute="leading" constant="16" id="r8U-b5-B2K"/>
+                                        <constraint firstItem="fxW-oO-3yE" firstAttribute="top" secondItem="fQ1-Dn-KpW" secondAttribute="bottom" constant="10" id="vHf-sq-QmQ"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                            <color key="value" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="horizontalMode" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="diagonalMode" value="NO"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusNeeded">
+                                            <real key="value" value="12"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HHs-5U-UHo" customClass="Gradient" customModule="ShadiBiyah" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="162" width="358" height="69"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohj-55-wg4" customClass="UILabelDeviceClass" customModule="FoodChoo" customModuleProvider="target">
+                                            <rect key="frame" x="16" y="8" width="119" height="17.5"/>
+                                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                            <color key="textColor" red="0.3921568627" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                                    <real key="value" value="15"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="iPhoneFontWeight" value="medium"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0331 7549490" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xrs-If-B4p" customClass="UILabelDeviceClass" customModule="FoodChoo" customModuleProvider="target">
+                                            <rect key="frame" x="16" y="35.5" width="326" height="20"/>
+                                            <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="16"/>
+                                            <color key="textColor" red="0.22352941179999999" green="0.24313725489999999" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                                    <real key="value" value="15"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="iPhoneFontWeight" value="medium"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="ohj-55-wg4" firstAttribute="top" secondItem="HHs-5U-UHo" secondAttribute="top" constant="8" id="CBf-YO-muC"/>
+                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Xrs-If-B4p" secondAttribute="bottom" constant="4" id="FRJ-AM-Aae"/>
+                                        <constraint firstAttribute="trailing" secondItem="Xrs-If-B4p" secondAttribute="trailing" constant="16" id="Mgd-8E-1jx"/>
+                                        <constraint firstAttribute="width" secondItem="HHs-5U-UHo" secondAttribute="height" multiplier="57:11" id="VIO-5N-pOO"/>
+                                        <constraint firstItem="Xrs-If-B4p" firstAttribute="leading" secondItem="HHs-5U-UHo" secondAttribute="leading" constant="16" id="gId-9j-fAD"/>
+                                        <constraint firstItem="Xrs-If-B4p" firstAttribute="top" secondItem="ohj-55-wg4" secondAttribute="bottom" constant="10" id="v4H-wz-CHb"/>
+                                        <constraint firstItem="ohj-55-wg4" firstAttribute="leading" secondItem="HHs-5U-UHo" secondAttribute="leading" constant="16" id="wGn-3z-POJ"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                            <color key="value" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="horizontalMode" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="diagonalMode" value="NO"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusNeeded">
+                                            <real key="value" value="12"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QPs-DF-mYY" customClass="Gradient" customModule="ShadiBiyah" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="243" width="358" height="69.5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rf5-Xd-gwo" customClass="UILabelDeviceClass" customModule="FoodChoo" customModuleProvider="target">
+                                            <rect key="frame" x="16" y="8" width="126.5" height="17.5"/>
+                                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                            <color key="textColor" red="0.3921568627" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                                    <real key="value" value="15"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="iPhoneFontWeight" value="medium"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="********************" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jxr-BF-UIB" customClass="UILabelDeviceClass" customModule="FoodChoo" customModuleProvider="target">
+                                            <rect key="frame" x="16" y="35.5" width="326" height="20"/>
+                                            <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="16"/>
+                                            <color key="textColor" red="0.22352941179999999" green="0.24313725489999999" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                                    <real key="value" value="15"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="iPhoneFontWeight" value="medium"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ks-Pz-qbh">
+                                            <rect key="frame" x="310" y="14.5" width="40" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="40" id="272-6C-vJm"/>
+                                                <constraint firstAttribute="height" constant="40" id="8QP-Ix-pXW"/>
+                                            </constraints>
+                                            <color key="tintColor" red="0.22352941179999999" green="0.24313725489999999" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain">
+                                                <imageReference key="image" image="greaterthan" catalog="system" symbolScale="medium" renderingMode="original"/>
+                                            </buttonConfiguration>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="2ks-Pz-qbh" firstAttribute="centerY" secondItem="QPs-DF-mYY" secondAttribute="centerY" id="7lm-Ez-Nh7"/>
+                                        <constraint firstAttribute="trailing" secondItem="jxr-BF-UIB" secondAttribute="trailing" constant="16" id="BcT-ga-F02"/>
+                                        <constraint firstAttribute="width" secondItem="QPs-DF-mYY" secondAttribute="height" multiplier="57:11" id="Jha-9c-bUt"/>
+                                        <constraint firstItem="jxr-BF-UIB" firstAttribute="leading" secondItem="QPs-DF-mYY" secondAttribute="leading" constant="16" id="Kkl-x0-oxG"/>
+                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="jxr-BF-UIB" secondAttribute="bottom" constant="4" id="Sff-dT-70k"/>
+                                        <constraint firstItem="rf5-Xd-gwo" firstAttribute="top" secondItem="QPs-DF-mYY" secondAttribute="top" constant="8" id="U4T-SM-YhS"/>
+                                        <constraint firstItem="rf5-Xd-gwo" firstAttribute="leading" secondItem="QPs-DF-mYY" secondAttribute="leading" constant="16" id="hgo-Ou-wnm"/>
+                                        <constraint firstItem="jxr-BF-UIB" firstAttribute="top" secondItem="rf5-Xd-gwo" secondAttribute="bottom" constant="10" id="nMN-F8-LXt"/>
+                                        <constraint firstAttribute="trailing" secondItem="2ks-Pz-qbh" secondAttribute="trailing" constant="8" id="sw5-vH-fL3"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                            <color key="value" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="horizontalMode" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="diagonalMode" value="NO"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusNeeded">
+                                            <real key="value" value="12"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="HHs-5U-UHo" firstAttribute="width" secondItem="HHs-5U-UHo" secondAttribute="height" multiplier="57:11" id="Lgz-9K-wbu"/>
+                                <constraint firstItem="QPs-DF-mYY" firstAttribute="width" secondItem="QPs-DF-mYY" secondAttribute="height" multiplier="57:11" id="WhI-fq-7Ld"/>
+                                <constraint firstItem="sZf-cf-zTv" firstAttribute="width" secondItem="sZf-cf-zTv" secondAttribute="height" multiplier="57:11" id="wle-J1-IbC"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="ayP-Qk-z5N">
+                            <rect key="frame" x="75" y="642" width="264" height="40"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vA0-P8-hOl">
+                                    <rect key="frame" x="0.0" y="0.0" width="120" height="40"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="120" id="bia-Td-lbb"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="14"/>
+                                    <state key="normal" title="CANCEL">
+                                        <color key="titleColor" red="0.3921568627" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                            <real key="value" value="16"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="iPhoneFontWeight" value="medium"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isCircular" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusNeeded">
+                                            <real key="value" value="20"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8D9-Q6-WjP">
+                                    <rect key="frame" x="144" y="0.0" width="120" height="40"/>
+                                    <color key="backgroundColor" red="0.3921568627" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="14"/>
+                                    <state key="normal" title="UPDATE">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                            <real key="value" value="16"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="iPhoneFontWeight" value="medium"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isCircular" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusNeeded">
+                                            <real key="value" value="20"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="UZD-DF-ZBl"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="RFl-eH-s0e" secondAttribute="trailing" constant="28" id="AZP-fa-bnP"/>
+                        <constraint firstItem="AxK-Im-KXY" firstAttribute="leading" secondItem="kjA-uS-k0e" secondAttribute="leading" id="HAb-0g-ECG"/>
+                        <constraint firstItem="RFl-eH-s0e" firstAttribute="top" secondItem="AxK-Im-KXY" secondAttribute="bottom" constant="20" id="Iqc-xD-DyN"/>
+                        <constraint firstItem="ayP-Qk-z5N" firstAttribute="top" secondItem="RFl-eH-s0e" secondAttribute="bottom" constant="64" id="PCM-Eb-Php"/>
+                        <constraint firstItem="RFl-eH-s0e" firstAttribute="leading" secondItem="kjA-uS-k0e" secondAttribute="leading" constant="28" id="g7Z-mc-HK5"/>
+                        <constraint firstAttribute="trailing" secondItem="AxK-Im-KXY" secondAttribute="trailing" id="iCM-Kx-WNk"/>
+                        <constraint firstItem="ayP-Qk-z5N" firstAttribute="centerX" secondItem="kjA-uS-k0e" secondAttribute="centerX" id="ja5-Cp-vIG"/>
+                        <constraint firstItem="AxK-Im-KXY" firstAttribute="top" secondItem="kjA-uS-k0e" secondAttribute="top" id="mM2-Sb-BpQ"/>
+                        <constraint firstItem="AxK-Im-KXY" firstAttribute="height" secondItem="kjA-uS-k0e" secondAttribute="height" multiplier="0.3" id="q4L-5g-fhG"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="kjA-uS-k0e" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="5LV-jR-ekb"/>
+                <constraint firstItem="kjA-uS-k0e" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="hNk-xi-kzf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="kjA-uS-k0e" secondAttribute="bottom" id="qMo-oN-iuC"/>
+                <constraint firstItem="kjA-uS-k0e" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="sx3-DK-o0P"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="81.696428571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="greaterthan" catalog="system" width="128" height="111"/>
+        <image name="pencil" catalog="system" width="128" height="113"/>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

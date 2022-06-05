@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="296.306" height="124.136" viewBox="0 0 296.306 124.136">
+  <defs>
+    <filter id="Rectangle_17457" x="0" y="0" width="296.306" height="124.136" filterUnits="userSpaceOnUse">
+      <feOffset dx="6" dy="6" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feFlood flood-color="#93a7be" flood-opacity="0.188"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <radialGradient id="radial-gradient" cx="0.012" cy="-0.199" r="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#efefef"/>
+      <stop offset="1" stop-color="#fff"/>
+    </radialGradient>
+    <filter id="Rectangle_17458" x="0" y="0" width="296.306" height="124.136" filterUnits="userSpaceOnUse">
+      <feOffset dx="6" dy="6" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur-2"/>
+      <feFlood flood-color="#93a7be" flood-opacity="0.188"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_13218" data-name="Group 13218" transform="translate(-6181 1010.5)">
+    <g id="Group_13217" data-name="Group 13217" transform="translate(6192.753 -998.5)">
+      <g transform="matrix(1, 0, 0, 1, -11.75, -12)" filter="url(#Rectangle_17457)">
+        <rect id="Rectangle_17457-2" data-name="Rectangle 17457" width="260.306" height="88.136" rx="12" transform="translate(12 12)" fill="#fff"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, -11.75, -12)" filter="url(#Rectangle_17458)">
+        <rect id="Rectangle_17458-2" data-name="Rectangle 17458" width="260.306" height="88.136" rx="12" transform="translate(12 12)" fill="url(#radial-gradient)"/>
+      </g>
+      <path id="Subtraction_110" data-name="Subtraction 110" d="M.867,60.6A11.938,11.938,0,0,1,0,56.108V12A12,12,0,0,1,12,0H185.074a12,12,0,0,1,7.774,2.858,10.94,10.94,0,0,0-6.2-1.912H11.574a11.012,11.012,0,0,0-11,11V58.054a11.054,11.054,0,0,0,.3,2.541Z" transform="translate(0 0)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
